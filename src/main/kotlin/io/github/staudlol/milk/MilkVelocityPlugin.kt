@@ -7,6 +7,8 @@ import com.velocitypowered.api.event.proxy.ProxyInitializeEvent
 import com.velocitypowered.api.plugin.Plugin
 import com.velocitypowered.api.proxy.ProxyServer
 import io.github.staudlol.milk.command.AlertCommand
+import io.github.staudlol.milk.command.FindCommand
+import io.github.staudlol.milk.command.staffchat.StaffChatCommand
 import java.util.logging.Logger
 
 @Plugin(
@@ -27,5 +29,7 @@ class MilkVelocityPlugin @Inject constructor(
         logger.info("Milk has been initialized.")
 
         commandManager.register("alert", AlertCommand(server))
+        commandManager.register("find", FindCommand(server))
+        commandManager.register("staffchat", StaffChatCommand(server))
     }
 }

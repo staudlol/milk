@@ -1,6 +1,6 @@
 package io.github.staudlol.milk.util
 
-import net.kyori.adventure.text.TextComponent
+import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer
 
 object CC {
@@ -12,7 +12,7 @@ object CC {
      * @return the translated string.
      */
 
-    fun translate(string: String): TextComponent {
+    fun translate(string: String): Component {
         return LegacyComponentSerializer.legacyAmpersand().deserialize(string)
     }
 }

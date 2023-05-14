@@ -23,7 +23,8 @@ class MilkSpigotPlugin @Inject constructor(
 ) {
 
     @Subscribe
-    fun onProxyInitialization() {
+    fun onProxyInitialization()
+    {
         logger.info("Milk has been initialized.")
 
         commandManager.register("alert", AlertCommand(server))

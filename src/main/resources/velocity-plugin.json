@@ -1,0 +1,8 @@
+{
+  "id": "milk-proxy",
+  "name": "milk",
+  "version": "1.0.0",
+  "description": "A proxy plugin for Velocity",
+  "authors": ["Staud"],
+  "main": "io.github.staudlol.milk.MilkVelocityPlugin"
+}
